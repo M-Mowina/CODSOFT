@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Could you survive Titanic?!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!-- FONTAWESOME ICONS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}">
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/questionnair.css') }}">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- ====> NAVBAR <====-->
+    <nav id="navbar" class="navbar navbar-expand-lg  rounded-bottom-4  bg">
+        <div class="container">
+            <a class="navbar-brand navtext " href="/"> Titanic Survival </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="container my-5">
+        <div class="title text-center">
+            <h1 class="main">Titanic Survival</h2>
+            <p>Please answer the following questions to the best of your ability.</p>
+        </div>
+        <form id="myForm" action="/" method="post">
+            <label for="Sibsp">1-Sibsp</label>
+            <br>
+            <select name="SibSp">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="8">8</option>
+            </select class="answer">
+            <br><br>
+
+            <label for="Pclass">2-Pclass (From 1 to 3)</label>
+            <br>
+            <input type="radio" name="Pclass" value="1"> <span class="answer">1 </span>
+            <input type="radio" name="Pclass" value="2"><span class="answer">2 </span>
+            <input type="radio" name="Pclass" value="3"><span class="answer">3 </span>
+            <br><br>
+
+            <label for="Parch">3-Parch</label>
+            <br>
+            <select name="Parch">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select class="answer">
+            <br><br>
+
+            <label for="Fare">4-Fare</label>
+            <br>
+            <input type="number" name='Fare'>
+            <br><br>
+
+            <label for="Age">5-Age</label>
+            <br>
+            <input type="number" name='Age'>
+            <br><br>
+
+            <label for="Sex">6-Sex</label>
+            <br>
+            <input type="radio" name="Sex" value="1"> <span class="answer">Female </span>
+            <input type="radio" name="Sex" value="0"> <span class="answer">Male </span>
+            <br><br>
+
+            <label for="Embarked">7-Embarked</label>
+            <br>
+            <input type="radio" name="Embarked" value="S"> <span class="answer">S </span>
+            <input type="radio" name="Embarked" value="C"> <span class="answer">C </span>
+            <input type="radio" name="Embarked" value="Q"> <span class="answer">Q </span>
+            <br><br>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

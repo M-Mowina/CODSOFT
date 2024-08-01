@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Could you survive Titanic?!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!-- FONTAWESOME ICONS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}">
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/questionnair.css') }}">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- ====> NAVBAR <====-->
+    <nav id="navbar" class="navbar navbar-expand-lg  rounded-bottom-4  bg">
+        <div class="container">
+            <a class="navbar-brand navtext " href="/"> Titanic Survival Result </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="container my-5">
+        <div class="title text-center">
+            <h1 class="main">Results</h2>
+        </div>
+        <div id="result">
+            {% if result %}
+                {% if image %}
+                
+                <div class="container my-5">
+                    <div class="row p-3 ">
+                        <div class="col-md-12 text-center">
+                            <h2>Uploaded Image:</h2>
+                            <img  class="w-25" src="data:image/{{ image.format }};base64,{{ image }}" alt="image">
+                            <div >
+                                {% endif %}    
+                                <h2 class="pt-4 full-height text-center prediction">Prediction Result:<p>{{ result }}</p></h2>
+                            {% endif %}
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+           
+            </div>
+</body>
+
+</html>

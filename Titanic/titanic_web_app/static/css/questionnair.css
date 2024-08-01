@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #1A2130;
+    --sec-color: #5A72A0;
+    --thrid-color: #83B4FF;
+    --four-color: #FDFFE2;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      color: var(--sec-color);
+  }
+   
+  p
+  {
+    color: var(--thrid-color);
+  }
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color:var(--thrid-color);
+}
+.main
+{
+    color: var(--primary-color);
+}
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+.answer
+{
+    color:#fff ;
+}
+select,
+input[type="text"],
+input[type="email"] {
+    width: calc(100% - 22px); /* Adjust width to fit container */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid ;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: var(--thrid-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
