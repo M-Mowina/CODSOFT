@@ -36,7 +36,7 @@ def survival():
 
     # Process user responses and return results
     prediction = predict(x_new)
-    if prediction[0][0] < 0.5:
+    if prediction[0][0] > 0.5:
        result = 'YOU SURVIVED'
     else: result = 'DID NOT SURVIVED'
     

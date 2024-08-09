@@ -30,7 +30,7 @@
             <p>Please answer the following questions to the best of your ability.</p>
         </div>
         <form id="myForm" action="/" method="post">
-            <label for="Sibsp">1-Sibsp</label>
+            <label for="Sibsp">1-Number of siblings or spouses aboard the Titanic.</label>
             <br>
             <select name="SibSp">
                 <option value="0">0</option>
@@ -43,14 +43,14 @@
             </select class="answer">
             <br><br>
 
-            <label for="Pclass">2-Pclass (From 1 to 3)</label>
+            <label for="Pclass">2-Passenger class. </label>
             <br>
-            <input type="radio" name="Pclass" value="1"> <span class="answer">1 </span>
-            <input type="radio" name="Pclass" value="2"><span class="answer">2 </span>
-            <input type="radio" name="Pclass" value="3"><span class="answer">3 </span>
+            <input type="radio" name="Pclass" value="1"> <span class="answer">1st </span>
+            <input type="radio" name="Pclass" value="2"><span class="answer">2nd </span>
+            <input type="radio" name="Pclass" value="3"><span class="answer">3rd </span>
             <br><br>
 
-            <label for="Parch">3-Parch</label>
+            <label for="Parch">3-Number of parents or children aboard the Titanic.</label>
             <br>
             <select name="Parch">
                 <option value="0">0</option>
@@ -63,27 +63,27 @@
             </select class="answer">
             <br><br>
 
-            <label for="Fare">4-Fare</label>
+            <label for="Fare">4-The fare paid for the ticket by the passenger.</label>
             <br>
             <input type="number" name='Fare'>
             <br><br>
 
-            <label for="Age">5-Age</label>
+            <label for="Age">5-Age of the passenger in years.</label>
             <br>
             <input type="number" name='Age'>
             <br><br>
 
-            <label for="Sex">6-Sex</label>
+            <label for="Sex">6- Gender of the passenger.</label>
             <br>
             <input type="radio" name="Sex" value="1"> <span class="answer">Female </span>
             <input type="radio" name="Sex" value="0"> <span class="answer">Male </span>
             <br><br>
 
-            <label for="Embarked">7-Embarked</label>
+            <label for="Embarked">7-Port of Embarkation.</label>
             <br>
-            <input type="radio" name="Embarked" value="S"> <span class="answer">S </span>
-            <input type="radio" name="Embarked" value="C"> <span class="answer">C </span>
-            <input type="radio" name="Embarked" value="Q"> <span class="answer">Q </span>
+            <input type="radio" name="Embarked" value="S"> <span class="answer">Southampton. </span>
+            <input type="radio" name="Embarked" value="C"> <span class="answer">Cherbourg. </span>
+            <input type="radio" name="Embarked" value="Q"> <span class="answer">Queenstown. </span>
             <br><br>
             <br><br>
             <button type="submit">Submit</button>
